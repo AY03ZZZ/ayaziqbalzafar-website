@@ -74,23 +74,6 @@ button {
   font: inherit;
 }
 
-.skip-link {
-  position: fixed;
-  top: 14px;
-  left: 14px;
-  z-index: 20;
-  border-radius: 999px;
-  background: var(--text);
-  color: var(--bg);
-  padding: 10px 14px;
-  transform: translateY(-160%);
-  transition: transform 180ms ease;
-}
-
-.skip-link:focus {
-  transform: translateY(0);
-}
-
 .site-shell {
   width: min(626px, calc(100% - 36px));
   margin: 0 auto;
