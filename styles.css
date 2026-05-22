@@ -481,6 +481,7 @@ p {
     align-items: start;
     gap: 16px;
     min-height: auto;
+    padding-bottom: 24px;
   }
 
   .portrait {
