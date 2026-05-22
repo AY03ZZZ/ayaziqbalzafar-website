@@ -278,6 +278,37 @@ p {
   white-space: nowrap;
 }
 
+.experience-main {
+  gap: 8px;
+}
+
+.role-list {
+  display: grid;
+  gap: 8px;
+}
+
+.role-entry {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.role-entry span {
+  overflow: hidden;
+  color: color-mix(in srgb, var(--text) 88%, var(--muted));
+  font-size: 0.86rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.role-entry em {
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-style: normal;
+  white-space: nowrap;
+}
+
 .skill-cloud {
   display: flex;
   flex-wrap: wrap;
@@ -494,6 +525,15 @@ p {
 
   .row-main strong,
   .row-main small {
+    white-space: normal;
+  }
+
+  .role-entry {
+    grid-template-columns: 1fr;
+    gap: 1px;
+  }
+
+  .role-entry span {
     white-space: normal;
   }
 
