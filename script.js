@@ -5,6 +5,27 @@ const sections = document.querySelectorAll("main section[id]");
 const year = document.querySelector("[data-year]");
 const themeKey = "az-theme-v9";
 
+if ("scrollRestoration" in window.history) {
+  window.history.scrollRestoration = "manual";
+}
+
+const resetInitialScroll = () => {
+  if (window.location.hash && window.location.hash !== "#home") return;
+
+  const previousScrollBehavior = root.style.scrollBehavior;
+  root.style.scrollBehavior = "auto";
+  window.scrollTo(0, 0);
+
+  requestAnimationFrame(() => {
+    window.scrollTo(0, 0);
+    root.style.scrollBehavior = previousScrollBehavior;
+  });
+};
+
+resetInitialScroll();
+window.addEventListener("pageshow", resetInitialScroll);
+window.addEventListener("load", resetInitialScroll);
+
 const storage = {
   get(key) {
     try {
