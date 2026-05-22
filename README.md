@@ -41,4 +41,4 @@ Upload or publish the folder as a static site. No build command is required.
 
 ## Personalise
 
-Replace `hello@ayazzafar.com` in `index.html` with your real email address when ready. The LinkedIn links point to `https://uk.linkedin.com/in/ayaz-iqbal-zafar`.
+Replace `hello@ayaziqbalzafar.com` in `index.html` with your real email address when ready. The LinkedIn links point to `https://uk.linkedin.com/in/ayaz-iqbal-zafar`.
