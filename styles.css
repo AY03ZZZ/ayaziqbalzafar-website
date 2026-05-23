@@ -10,6 +10,7 @@
   --card-hover: rgba(0, 127, 255, 0.14);
   --accent: #007fff;
   --accent-2: #007fff;
+  --ease-smooth: cubic-bezier(0.2, 0.8, 0.2, 1);
   --shadow: 0 22px 80px rgba(0, 0, 0, 0.42);
 }
 
@@ -25,6 +26,7 @@
   --card-hover: rgba(0, 127, 255, 0.1);
   --accent: #007fff;
   --accent-2: #007fff;
+  --ease-smooth: cubic-bezier(0.2, 0.8, 0.2, 1);
   --shadow: 0 22px 70px rgba(24, 28, 34, 0.14);
 }
 
@@ -154,6 +156,13 @@ p {
   padding: 6px 10px;
   font-size: 0.78rem;
   font-weight: 650;
+  transition: background 260ms var(--ease-smooth), color 260ms var(--ease-smooth), transform 260ms var(--ease-smooth);
+}
+
+.hero-tags span:hover {
+  background: var(--card-hover);
+  color: var(--text);
+  transform: translateY(-1px);
 }
 
 .portrait {
@@ -167,7 +176,7 @@ p {
   background: var(--card);
   box-shadow: var(--shadow);
   overflow: hidden;
-  transition: transform 180ms ease, border-color 180ms ease;
+  transition: transform 260ms var(--ease-smooth), border-color 260ms var(--ease-smooth);
 }
 
 .portrait::before {
@@ -209,7 +218,7 @@ p {
   border-radius: 18px;
   margin: 0 -12px;
   padding: 10px 12px;
-  transition: background 180ms ease, transform 180ms ease;
+  transition: background 260ms var(--ease-smooth), transform 260ms var(--ease-smooth);
 }
 
 .row-link + .row-link {
@@ -318,11 +327,12 @@ p {
 .skill-cloud span {
   padding: 8px 11px;
   font-size: 0.87rem;
-  transition: background 180ms ease, transform 180ms ease;
+  transition: background 260ms var(--ease-smooth), color 260ms var(--ease-smooth), transform 260ms var(--ease-smooth);
 }
 
 .skill-cloud span:hover {
   background: var(--card-hover);
+  color: var(--text);
   transform: translateY(-2px);
 }
 
@@ -341,11 +351,12 @@ p {
   padding: 10px 14px;
   font-size: 0.9rem;
   font-weight: 720;
-  transition: background 180ms ease, transform 180ms ease;
+  transition: background 260ms var(--ease-smooth), color 260ms var(--ease-smooth), transform 260ms var(--ease-smooth);
 }
 
 .contact-actions a:hover {
   background: var(--card-hover);
+  color: var(--text);
   transform: translateY(-2px);
 }
 
@@ -365,7 +376,7 @@ p {
   border-radius: 999px;
   background: var(--card);
   color: var(--muted);
-  transition: background 180ms ease, color 180ms ease, transform 180ms ease;
+  transition: background 260ms var(--ease-smooth), color 260ms var(--ease-smooth), transform 260ms var(--ease-smooth);
 }
 
 .social-links a:hover {
@@ -411,7 +422,7 @@ p {
   background: transparent;
   color: var(--muted);
   cursor: pointer;
-  transition: background 180ms ease, color 180ms ease, transform 180ms ease;
+  transition: background 260ms var(--ease-smooth), color 260ms var(--ease-smooth), transform 260ms var(--ease-smooth);
 }
 
 .dock a:hover,
@@ -452,7 +463,7 @@ p {
 .site-footer a {
   color: var(--text);
   font-weight: 650;
-  transition: color 180ms ease;
+  transition: color 260ms var(--ease-smooth);
 }
 
 .site-footer a:hover {
