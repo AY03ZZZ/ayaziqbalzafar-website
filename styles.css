@@ -287,6 +287,15 @@ p {
   white-space: nowrap;
 }
 
+.experience-row {
+  grid-template-columns: 48px minmax(0, 1fr);
+  align-items: start;
+}
+
+.experience-row .row-icon {
+  margin-top: 1px;
+}
+
 .experience-main {
   gap: 8px;
 }
@@ -298,7 +307,7 @@ p {
 
 .role-entry {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-columns: minmax(0, 1fr) 140px;
   align-items: baseline;
   gap: 12px;
 }
@@ -315,6 +324,7 @@ p {
   color: var(--muted);
   font-size: 0.8rem;
   font-style: normal;
+  text-align: right;
   white-space: nowrap;
 }
 
@@ -547,6 +557,10 @@ p {
 
   .role-entry span {
     white-space: normal;
+  }
+
+  .role-entry em {
+    text-align: left;
   }
 
   .dock {
