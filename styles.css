@@ -239,7 +239,7 @@ p {
   place-items: center;
   border: 1px solid var(--line);
   border-radius: 50%;
-  background: var(--accent);
+
   color: #ffffff;
   font-weight: 820;
   letter-spacing: 0.04em;
