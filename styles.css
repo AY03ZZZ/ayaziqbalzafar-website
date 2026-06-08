@@ -170,8 +170,8 @@ p {
 .portrait {
   position: relative;
   display: grid;
-  width: 134px;
-  height: 134px;
+  width: 150px;
+  height: 150px;
   place-items: center;
   border: 1px solid var(--line-strong);
   border-radius: 50%;
@@ -197,8 +197,8 @@ p {
 .portrait img {
   position: relative;
   display: block;
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -515,8 +515,8 @@ p {
   }
 
   .portrait img {
-    width: 84px;
-    height: 84px;
+    width: 104px;
+    height: 104px;
   }
 
   h1 {
